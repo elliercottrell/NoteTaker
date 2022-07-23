@@ -2,12 +2,19 @@ body {
   background-color: #d9d9d9;
 }
 
+.content {
+  display: block;
+  margin: 0 100px;
+}
+
 #list {
   height: 40px;
   width: 100px;
   padding: 2px;
   font-family: "Courier New", Courier, monospace;
   color: #142440;
+  margin-top: 100px;
+  cursor: pointer;
 }
 
 button {
@@ -16,7 +23,10 @@ button {
   padding: 10px 15px;
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
+  font-weight: 500;
   font-size: 15px;
+  cursor: pointer;
+  outline: none;
 }
 
 textarea {
@@ -24,4 +34,12 @@ textarea {
   border: solid 1px #142440;
   border-radius: 0;
   color: #142440;
+  outline: none;
+}
+
+button:hover,
+button:active,
+textarea:hover,
+textarea:active {
+  outline: none;
 }
