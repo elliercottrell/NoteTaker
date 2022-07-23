@@ -9,7 +9,7 @@ function addToList(name) {
 //initialize the list from localStorage
 
 var notes = JSON.parse(localStorage.getItem("notes")) || {
-  "my note": "",
+  TODAY: "",
 };
 for (var name in notes) if (notes.hasOwnProperty(name)) addToList(name);
 
